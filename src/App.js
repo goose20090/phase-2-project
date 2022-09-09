@@ -1,21 +1,29 @@
 import './App.css';
 import NavBar from './NavBar';
 import {Route, Switch} from "react-router-dom";
-import Characters from './Characters';
-import Quotes from './Quotes';
+import Aragon from './Aragon';
+import Party from './Party';
+import Gandalf from './Gandalf';
+import Frodo from './Frodo';
 
 function App() {
   return (
     <div>
       <NavBar/>
       <Switch>
-        <Route exact path = "/characters">
-          <Characters/>
+        <Route exact path = "/gandalf">
+          <Gandalf/>
         </Route>
-        <Route exact path = "/quotes">
-          <Quotes/>
+        <Route exact path = "/aragon">
+          <Aragon/>
+        </Route>
+        <Route exact path = "/frodo">
+          <Frodo/>
         </Route>
       </Switch>
+      <Party/>
+
+
       
     </div>
   );
