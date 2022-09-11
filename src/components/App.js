@@ -1,14 +1,18 @@
-import './App.css';
+import '../css/App.css';
 import NavBar from './NavBar';
 import {Route, Switch} from "react-router-dom";
 import Aragon from './Aragon';
-import Party from './Party';
 import Gandalf from './Gandalf';
 import Frodo from './Frodo';
+import Party from './Party';
+import {Button, ButtonLabel} from "./Button.style"
+import {Container} from "./Container.style"
+import {GlobalStyles} from "../GlobalStyles.style"
 
 function App() {
   return (
-    <div>
+    <Container>
+      <GlobalStyles/>
       <NavBar/>
       <Switch>
         <Route exact path = "/gandalf">
@@ -22,10 +26,10 @@ function App() {
         </Route>
       </Switch>
       <Party/>
-
+      <Button backgroundColor = "violet"><ButtonLabel>Click Me</ButtonLabel></Button>
 
       
-    </div>
+    </Container >
   );
 }
 
