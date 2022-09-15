@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import CharacterCard from "./CharacterCard";
+import { StyledCharacterCard } from "./CharacterChard.style";
 
 function Frodo(){
 
@@ -18,7 +18,7 @@ function Frodo(){
         .then(res=> {setCard(res.docs[0]);
           console.log(res.docs[0]);})}, [])
     return(
-        <CharacterCard card={frodoCard}/>
+        <StyledCharacterCard card={frodoCard}/>
 
     )
 }

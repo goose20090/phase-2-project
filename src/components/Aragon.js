@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CharacterCard from "./CharacterCard";
+import { StyledCharacterCard } from "./CharacterChard.style";
 
 function Aragon(){
     const [aragonCard, setCard]= useState({})
@@ -18,7 +18,7 @@ function Aragon(){
            
     }, [])
     return(
-        <CharacterCard card={aragonCard}/>
+        <StyledCharacterCard card={aragonCard}/>
     )
 
 }

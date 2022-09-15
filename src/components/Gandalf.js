@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import CharacterCard from "./CharacterCard";
+import { StyledCharacterCard } from "./CharacterChard.style";
 
 function Gandalf(){
 
@@ -21,7 +22,7 @@ function Gandalf(){
 
     return (
         <div>
-            <CharacterCard card={gandalfCard}/>
+            <StyledCharacterCard card={gandalfCard}/>
             
         </div>
     )
