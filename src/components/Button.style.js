@@ -1,13 +1,18 @@
-import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
+import Button from "./Button";
 
-export const Button = styled.button`
+export const StyledButton = styled(Button)`
 
     width: 200px;
-    height: 50 px;
-    background-color: ${(props) => props.backgroundColor};
+    height: 50px;
+    background-color: ${(props)=> props.backgroundColor};
+
+    &:active {
+        background-color: coral;
+    }
 
     &:hover{
+        background-color: aquamarine;
         & label{
             color: green;
         }
@@ -16,7 +21,9 @@ export const Button = styled.button`
 `
 
 export const ButtonLabel = styled.label`
-    font-size: 25 px;
+
     color: white;
 
+
 `
+

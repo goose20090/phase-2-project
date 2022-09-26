@@ -1,0 +1,43 @@
+{
+  "party": [
+      {
+          "_id": "5cd99d4bde30eff6ebccfbe6",
+          "height": "198cm (6'6\")",
+          "race": "Human",
+          "gender": "Male",
+          "birth": "March 1 ,2931",
+          "spouse": "Arwen",
+          "death": "FO 120",
+          "realm": "Reunited Kingdom,Arnor,Gondor",
+          "hair": "Dark",
+          "name": "Aragorn II Elessar",
+          "wikiUrl": "http://lotr.wikia.com//wiki/Aragorn_II_Elessar"
+      } ,
+      {
+          "_id": "5cd99d4bde30eff6ebccfea0",
+          "height": "",
+          "race": "Maiar",
+          "gender": "Male",
+          "birth": "Before the the Shaping of Arda",
+          "spouse": "",
+          "death": "January 253019 ,Battle of the Peak immortal",
+          "realm": "",
+          "hair": "Grey, later white",
+          "name": "Gandalf",
+          "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf"
+      },
+      {
+          "_id": "5cd99d4bde30eff6ebccfc15",
+          "height": "1.06m (3'6\")",
+          "race": "Hobbit",
+          "gender": "Male",
+          "birth": "22 September ,TA 2968",
+          "spouse": "",
+          "death": "Unknown (Last sighting ,September 29 ,3021,) (,SR 1421,)",
+          "realm": "",
+          "hair": "Brown",
+          "name": "Frodo Baggins",
+          "wikiUrl": "http://lotr.wikia.com//wiki/Frodo_Baggins"
+      }
+  ]
+}

@@ -12,7 +12,6 @@ function CharacterCard({className, card}){
     <h3>{race}</h3>
 
     <p>{height}</p>
-    <br/>
     <p>{birth}</p>
     
     </div>

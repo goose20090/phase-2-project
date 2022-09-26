@@ -1,13 +1,11 @@
 import '../css/App.css';
 import NavBar from './NavBar';
 import {Route, Switch} from "react-router-dom";
-import Aragon from './Aragon';
-import Gandalf from './Gandalf';
-import Frodo from './Frodo';
 import Party from './Party';
-import {Button, ButtonLabel} from "./Button.style"
 import {Container} from "./Container.style"
 import {GlobalStyles} from "../GlobalStyles.style"
+import {Button, StyledButton} from "./Button.style"
+import CharacterFinder from './CharacterFinder';
 
 function App() {
   return (
@@ -15,20 +13,13 @@ function App() {
       <GlobalStyles/>
       <NavBar/>
       <Switch>
-        <Route exact path = "/gandalf">
-          <Gandalf/>
+        <Route exact path = "/party">
+          <Party/>
         </Route>
-        <Route exact path = "/aragon">
-          <Aragon/>
-        </Route>
-        <Route exact path = "/frodo">
-          <Frodo/>
+        <Route exact path = "/finder">
+          <CharacterFinder/>
         </Route>
       </Switch>
-      <Party/>
-      <Button backgroundColor = "violet"><ButtonLabel>Click Me</ButtonLabel></Button>
-
-      
     </Container >
   );
 }

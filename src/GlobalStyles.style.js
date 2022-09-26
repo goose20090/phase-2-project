@@ -1,11 +1,14 @@
 import {createGlobalStyle} from "styled-components"
 
+
 export const GlobalStyles = createGlobalStyle`
 
+    @font-face {
+    font-family: "kelt";
+    src: url(/fonts/keltn.ttf);
+    }
     body {
-        background-color: pink;
-        margin: 0px;
-        padding: 0px;
+        font-family: 'kelt';
         
     }
 
