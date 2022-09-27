@@ -1,18 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StyledCharacterCard } from "./CharacterChard.style";
-
+import useQuery from "../hooks/useQuery"
 function PartyContainer({className}){
 
-    let testCharacterObj= {
-        name: "Angus",
-        race: "Human",
-        height: '5"11',
-        birth: "20/08/1994"
-    }
+    const [cards, setCards] = useState([])
+
+    useEffect(()=>{fetch ("http://localhost:3000/party")
+    .then(res=> res.json())
+    .then(res=>setCards(res))}, [])
+
     return(
         <div className={className}>
-            <StyledCharacterCard card = {testCharacterObj}/>
-            
+            {cards.map((card)=> <StyledCharacterCard key = {card._id} card = {card}/>)}            
         </div>
     )
 }
