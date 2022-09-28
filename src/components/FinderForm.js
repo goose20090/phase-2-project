@@ -31,7 +31,6 @@ function FinderForm({className}){
             .then(res=>console.log(res))
     }
 
-
     return (
             <form className = {className} onSubmit = {handleSubmit}>
                 <input onChange = {handleChange} type= "text" name = "name" value = {formData.name} placeholder="Type a name"></input>

@@ -17,11 +17,3 @@ function useQuery(url){
 
 export default useQuery;
 
-
-// ,{
-//   method: "GET",
-//   headers:{
-//       'Accept': 'application/json',
-//       'Authorization': 'Bearer DXTHdjzueNO5IyvdtUYC'
-//   }
-// })
