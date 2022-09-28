@@ -8,7 +8,7 @@ export const StyledButton = styled(Button)`
     background-color: ${(props)=> props.backgroundColor};
 
     &:active {
-        background-color: coral;
+        background-color: red;
     }
 
     &:hover{

@@ -37,11 +37,17 @@ function FinderContainer({className}){
             })
     }
 
+    function handleCardDelete(e){
+        let clickedCard = e.target.parentNode.childNodes[1].textContent
+        const updatedCards = cards.filter((card)=> clickedCard !== card.name)
+        setCards(updatedCards)
+    }
+
     return(
         <div className={className}>
             <h1>Find Your Party</h1>
             <StyledFinderForm initialState = {initialState} formData = {formData} handleChange= {handleChange} handleSubmit= {handleSubmit}/>
-            {cards.map((card)=> <StyledCharacterCard key = {card._id} card = {card}/>)} 
+            {cards.map((card)=> <StyledCharacterCard key = {card._id} handleCardDelete= {handleCardDelete} card = {card}/>)} 
         </div>
     )
 }

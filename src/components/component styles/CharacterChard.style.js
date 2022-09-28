@@ -9,4 +9,8 @@ export const StyledCharacterCard = styled(CharacterCard)`
     margin-left: 5px;
     padding-left: 5px;
 
+    span {
+        float: right; 
+        cursor: pointer;
+    }
 `
