@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "../CharacterCard";
 
 export const StyledCharacterCard = styled(CharacterCard)`
-    width: 20%;
-    height: 50%;
+    width: fit-content;
+    height: fit-content;
     background-color: skyblue;
     float: left;
-    margin: 5%;
+    margin-left: 5px;
     padding-left: 5px;
 
 `

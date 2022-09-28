@@ -2,9 +2,8 @@ import '../css/App.css';
 import NavBar from './NavBar';
 import {Route, Switch} from "react-router-dom";
 import Party from './Party';
-import {Container} from "./Container.style"
+import {Container} from "./component styles/Container.style"
 import {GlobalStyles} from "../GlobalStyles.style"
-import {Button, StyledButton} from "./Button.style"
 import CharacterFinder from './CharacterFinder';
 
 function App() {

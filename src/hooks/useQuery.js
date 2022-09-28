@@ -5,13 +5,7 @@ function useQuery(url){
     const [data, setData]= useState({})
 
     useEffect(()=>{
-        fetch(url,{
-              method: "GET",
-              headers:{
-                  'Accept': 'application/json',
-                  'Authorization': 'Bearer DXTHdjzueNO5IyvdtUYC'
-              }
-            })
+        fetch(url)
           .then(res=>res.json())
           .then(res=> {setData(res);
             console.log(res);})
@@ -22,3 +16,12 @@ function useQuery(url){
 }
 
 export default useQuery;
+
+
+// ,{
+//   method: "GET",
+//   headers:{
+//       'Accept': 'application/json',
+//       'Authorization': 'Bearer DXTHdjzueNO5IyvdtUYC'
+//   }
+// })

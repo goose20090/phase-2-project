@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import FinderContainer from "./FinderContainer";
+import PartyContainer from "../PartyContainer"
 
-
-export const StyledFinderContainer = styled(FinderContainer)`
+export const StyledPartyContainer = styled(PartyContainer)`
 
     width: 80%;
     height: 400px;
@@ -10,3 +9,4 @@ export const StyledFinderContainer = styled(FinderContainer)`
     border: 5px solid black;
 
 `
+

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { StyledCharacterCard } from "./CharacterChard.style";
+import { StyledCharacterCard } from "./component styles/CharacterChard.style";
 import useQuery from "../hooks/useQuery"
 function PartyContainer({className}){
 
@@ -8,6 +8,8 @@ function PartyContainer({className}){
     useEffect(()=>{fetch ("http://localhost:3000/party")
     .then(res=> res.json())
     .then(res=>setCards(res))}, [])
+
+
 
     return(
         <div className={className}>

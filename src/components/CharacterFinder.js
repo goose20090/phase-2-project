@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledFinderContainer } from "./FinderContainer.style";
+import { StyledFinderContainer } from "./component styles/FinderContainer.style";
 
 function CharacterFinder(){
     return(

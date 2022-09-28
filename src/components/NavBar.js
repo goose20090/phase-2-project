@@ -6,7 +6,7 @@ function NavBar(){
         display: "inline-block",
         width: "80px",
         padding: "12px",
-        margin: "0 200px 6px",
+        margin: "0 100px 6px",
         background: "blue",
         textDecoration: "none",
         color: "white",

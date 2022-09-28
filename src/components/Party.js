@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledPartyContainer } from "./PartyContainer.style";
+import { StyledPartyContainer } from "./component styles/PartyContainer.style";
 
 function Party(){
     return(
