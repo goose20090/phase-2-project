@@ -7,8 +7,9 @@ function Button({className, buttonLabel, handleAddToParty, card}){
 
     }
 
+
     return (
-        <button onClick = {handleClick}className= {className}>{buttonLabel}</button>
+        <button onClick = {handleClick} className= {className}>{buttonLabel}</button>
     )
 }
 

@@ -56,25 +56,35 @@ function handleSubmit(e){
 
 // Card deletion for "X" clicks
 
-function handleCardDelete(e){
-  let clickedCard = e.target.parentNode.childNodes[1].textContent
-  const updatedCards = finderCards.filter((card)=> clickedCard !== card.name)
+function handleFinderCardDelete(card, e){
+  const updatedCards = finderCards.filter((finderCard)=> finderCard.name !== card.name)
   setFinderCards(updatedCards)
 }
 
+function handlePartyCardDelete(card, e){
+  fetch(`http://localhost:3000/party/${card.id}`,{
+    method: "DELETE"
+  })
+  .then(res=> console.log(res));
+  const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
+  setPartyCards(updatedCards);
+}
+
+
+// POST request to add party members to json server
   
-  function handleAddToParty(card){
-    fetch("http://localhost:3000/party"
-    , {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(card)
-    })
-    .then(res=>res.json())
-    .then(res=> console.log(res))
-  }
+function handleAddToParty(card){
+  fetch("http://localhost:3000/party"
+  , {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(card)
+  })
+  .then(res=>res.json())
+  .then(res=> console.log(res))
+}
 
 
 
@@ -90,10 +100,10 @@ function handleCardDelete(e){
       <NavBar/>
       <Switch>
         <Route exact path = "/party">
-          <Party partyCards = {partyCards} setPartyCards = {setPartyCards}/>
+          <Party partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete= {handlePartyCardDelete}/>
         </Route>
         <Route exact path = "/finder">
-          <CharacterFinder cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleCardDelete}/>
+          <CharacterFinder cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>
         </Route>
       </Switch>
     </Container >

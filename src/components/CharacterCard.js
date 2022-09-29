@@ -7,13 +7,12 @@ function CharacterCard({className, card, handleCardDelete, handleAddToParty }){
 
     const {name, race, height, birth} = card;
 
-    function handleClick(){
-        console.log("helloo")
+    function handleClick(e){
+        handleCardDelete(card, e)
     }
-
        return(
    <div className={className}>
-    <span onClick={handleCardDelete}>X</span>
+    <span onClick={handleClick}>X</span>
     <h1>{name}</h1>
     <h3>{race}</h3>
 

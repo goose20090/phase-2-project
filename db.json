@@ -1,35 +1,6 @@
 {
   "party": [
     {
-      "id": 1,
-      "_id": "5cd99d4bde30eff6ebccfbe6",
-      "height": "198cm (6'6\")",
-      "race": "Human",
-      "gender": "Male",
-      "birth": "March 1 ,2931",
-      "spouse": "Arwen",
-      "death": "FO 120",
-      "realm": "Reunited Kingdom,Arnor,Gondor",
-      "hair": "Dark",
-      "name": "Aragorn II Elessar",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Aragorn_II_Elessar"
-    },
-    {
-      "id": 2,
-      "_id": "5cd99d4bde30eff6ebccfea0",
-      "height": "",
-      "race": "Maiar",
-      "gender": "Male",
-      "birth": "Before the the Shaping of Arda",
-      "spouse": "",
-      "death": "January 253019 ,Battle of the Peak immortal",
-      "realm": "",
-      "hair": "Grey, later white",
-      "name": "Gandalf",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf"
-    },
-    {
-      "id": 3,
       "_id": "5cd99d4bde30eff6ebccfc15",
       "height": "1.06m (3'6\")",
       "race": "Hobbit",
@@ -40,7 +11,36 @@
       "realm": "",
       "hair": "Brown",
       "name": "Frodo Baggins",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Frodo_Baggins"
+      "wikiUrl": "http://lotr.wikia.com//wiki/Frodo_Baggins",
+      "id": 1
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfd0d",
+      "height": "1.22m (4'0\")",
+      "race": "Hobbit",
+      "gender": "Male",
+      "birth": "April 6 ,2980",
+      "spouse": "Rosie Cotton",
+      "death": "Still alive, after going to the ,Undying Lands, in ,FO 61",
+      "realm": "",
+      "hair": "Blond (movie)",
+      "name": "Samwise Gamgee",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Samwise_Gamgee",
+      "id": 2
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfbe6",
+      "height": "198cm (6'6\")",
+      "race": "Human",
+      "gender": "Male",
+      "birth": "March 1 ,2931",
+      "spouse": "Arwen",
+      "death": "FO 120",
+      "realm": "Reunited Kingdom,Arnor,Gondor",
+      "hair": "Dark",
+      "name": "Aragorn II Elessar",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Aragorn_II_Elessar",
+      "id": 3
     }
   ]
 }
