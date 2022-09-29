@@ -1,11 +1,11 @@
 import React from "react";
 import { StyledPartyContainer } from "./component styles/PartyContainer.style";
 
-function Party(){
+function Party({partyCards, setPartyCards}){
     return(
         <div>
             <h1>Party Component</h1>
-            <StyledPartyContainer/>
+            <StyledPartyContainer partyCards = {partyCards} setPartyCards = {setPartyCards}/>
         </div>
     )
 }

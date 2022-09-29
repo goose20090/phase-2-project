@@ -1,8 +1,14 @@
 import React from "react";
 
-function Button({className, buttonLabel}){
+function Button({className, buttonLabel, handleAddToParty, card}){
+
+    function handleClick(){
+        handleAddToParty(card)
+
+    }
+
     return (
-        <button className= {className}>{buttonLabel}</button>
+        <button onClick = {handleClick}className= {className}>{buttonLabel}</button>
     )
 }
 
