@@ -64,7 +64,16 @@ function handleCardDelete(e){
 
   
   function handleAddToParty(card){
-    console.log(card)
+    fetch("http://localhost:3000/party"
+    , {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(card)
+    })
+    .then(res=>res.json())
+    .then(res=> console.log(res))
   }
 
 
