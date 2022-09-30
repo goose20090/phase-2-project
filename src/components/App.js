@@ -6,6 +6,7 @@ import {Container} from "./component styles/Container.style"
 import {GlobalStyles} from "../GlobalStyles.style"
 import CharacterFinder from './CharacterFinder';
 import React, {useState} from 'react';
+import Home from './Home';
 
 function App() {
 
@@ -124,6 +125,9 @@ function handleAddToParty(card){
         </Route>
         <Route exact path = "/finder">
           <CharacterFinder cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>
+        </Route>
+        <Route exact path = "/">
+          <Home/>
         </Route>
       </Switch>
     </Container >

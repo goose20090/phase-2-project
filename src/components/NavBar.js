@@ -15,6 +15,18 @@ function NavBar(){
         <>
             <h1>LOTR APP</h1>
             <NavLink
+            to= "/"
+            exact
+            
+            style = {linkStyles}
+            
+            activeStyle = {{
+                background: "darkblue",
+            }}
+            >
+                Home
+            </NavLink>
+            <NavLink
             to= "/party"
             exact
             
