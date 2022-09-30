@@ -35,12 +35,27 @@ function App() {
     })
 }
 
+// Capitalise form Data to prepare GET request to API
+
+function capitaliseString(string){
+  const words = string.split(" ");
+  for (let i = 0; i < words.length; i++){
+    words[i]= words[i][0].toUpperCase() + words[i].substr(1).toLowerCase()
+  }
+
+  return words.join(" ")
+
+}
+
 // GET request for Form Submit
 
 
 function handleSubmit(e){
   e.preventDefault()
-  fetch(`https://the-one-api.dev/v2/character?name=${formData.name}`,{
+
+  let capFormData = capitaliseString(formData.name)
+
+  fetch(`https://the-one-api.dev/v2/character?name=${capFormData}`,{
       method: "GET",
       headers:{
           'Accept': 'application/json',
@@ -53,6 +68,11 @@ function handleSubmit(e){
           res.docs.length ? setFinderCards([...finderCards, res.docs[0]]) : console.log('no matching character')
       })
 }
+
+
+
+
+
 
 // Card deletion for "X" clicks
 
