@@ -1,5 +1,5 @@
 import '../css/App.css';
-import NavBar from './NavBar';
+import {StyledNavBar} from "./component styles/NavBar.style"
 import {Route, Switch} from "react-router-dom";
 import Party from './Party';
 import {MainAppContainer} from "./component styles/MainAppContainer.style"
@@ -57,6 +57,9 @@ function capitaliseString(string){
   for (let i = 0; i < words.length; i++){
     if (words[i].length === 2){
       words[i].toUpperCase()
+    }
+    else if (words[i] === "and" || words[i] ==="in" || words[i] === "the"){
+      words[i].toLowerCase()
     }
     else {words[i]= words[i][0].toUpperCase() + words[i].substr(1).toLowerCase()}
   }
@@ -131,13 +134,13 @@ function handleAddToParty(card){
   return (
     <MainAppContainer>
       <GlobalStyles/>
-      <NavBar/>
+      <StyledNavBar/>
       <Switch>
         <Route exact path = "/party">
           <Party partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete= {handlePartyCardDelete} progress = {progress}/>
         </Route>
         <Route exact path = "/finder">
-          <CharacterFinder cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>
+          <CharacterFinder progress = {progress} cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>
         </Route>
         <Route exact path = "/">
           <Home/>

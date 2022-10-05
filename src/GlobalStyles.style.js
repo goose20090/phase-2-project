@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     body {
         font-family: 'kelt';
+        background-color: lightgoldenrodyellow;
         
     }
 

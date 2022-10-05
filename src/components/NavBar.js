@@ -1,56 +1,41 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { StyledNavLink } from "./component styles/NavBar.style";
 
-function NavBar(){
-    const linkStyles = {
-        display: "inline-block",
-        width: "80px",
-        padding: "12px",
-        margin: "0 100px 6px",
-        background: "#DC824F",
-        textDecoration: "none",
-        color: "white",
-      }
+function NavBar({className}){
     return(
-        <>
+        <div className={className}>
             <h1>LOTR APP</h1>
-            <NavLink
+            <StyledNavLink
             to= "/"
             exact
-            
-            style = {linkStyles}
-            
-            activeStyle = {{
-                background: "#5c1014",
+            activeStyle={{
+                background: "#5c1014"
             }}
+            
             >
                 Home
-            </NavLink>
-            <NavLink
+            </StyledNavLink>
+            <StyledNavLink
             to= "/party"
             exact
-            
-            style = {linkStyles}
-            
-            activeStyle = {{
-                background: "#5c1014",
+            activeStyle={{
+                background: "#5c1014"
             }}
+            
             >
                 Party
-            </NavLink>
-            <NavLink
+            </StyledNavLink>
+            <StyledNavLink
             to= "/finder"
             exact
-            
-            style = {linkStyles}
-            
-            activeStyle = {{
-                background: "#5c1014",
+            activeStyle={{
+                background: "#5c1014"
             }}
+            
             >
                 Character Finder
-            </NavLink>
-        </>
+            </StyledNavLink>
+        </div>
     )
 }
 
