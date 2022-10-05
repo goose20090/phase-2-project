@@ -5,9 +5,9 @@ export const StyledCharacterCard = styled(CharacterCard)`
     width: fit-content;
     height: fit-content;
     background-color: #FBC841;
-    float: left;
     margin-left: 5px;
     padding-left: 5px;
+    display: inline-block;
 
     span {
         float: right; 

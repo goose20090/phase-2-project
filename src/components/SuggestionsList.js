@@ -6,13 +6,21 @@ import {StyledList, StyledListItem} from "../components/component styles/List.st
 function SuggestionsList({className}){
 
     const characterArr = ["Aragorn II Elessar", "Arwen", "Balin", "Bard", "Beorn", "Beren", "Bilbo Baggins", "Boromir", "Celeborn", "Celebrimbor", "Denethor II", "Eärendil", "Elwing", "Elendil", "Elrond", "Éomer", "Éowyn", "Faramir", "Fëanor", "Fíli and Kíli", "Fingolfin", "Finrod", "Frodo Baggins", "Galadriel", "Gandalf", "Gil-galad", "Glorfindel", "Gimli", "Goldberry", "Gollum", "Gríma Wormtongue", "Húrin", "Idril", "Isildur", "Legolas", "Lúthien", "Maedhros", "Melian", "Meriadoc Brandybuck", "Morgoth", "Peregrin Took", "Radagast", "Samwise Gamgee", "Saruman", "Sauron", "Shelob", "Smaug", "Théoden", "Thingol", "Thranduil", "Thorin II Oakenshield", "Tom Bombadil", "Treebeard", "Tuor", "Túrin", "Ungoliant", "Watcher in the Water"]
+
+    function copyName(e){
+        let name = e.target.textContent;
+        navigator.clipboard.writeText(name)
+
+        console.log("Copied the text:" + name)
+
+    }
     return (
         <div>
             <h1>Search Suggestions</h1>
             <p>Accents and Epiphets must be exact</p>
             <StyledSubContainer className={className}>
                 <StyledList>
-                    {characterArr.map((character)=> <StyledListItem>{character}</StyledListItem>)}
+                    {characterArr.map((character)=> <StyledListItem key = {character} onClick={copyName}>{character}</StyledListItem>)}
                 </StyledList>
             </StyledSubContainer>
         </div>
