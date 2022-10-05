@@ -1,13 +1,14 @@
 import React from "react";
-import { StyledPartyContainer } from "./component styles/PartyContainer.style";
-import ProgressBar from "./ProgressBar"
 
-function Party({partyCards, setPartyCards, handleCardDelete}){
+import {StyledProgressBar} from "../components/component styles/ProgressBar.style"
+import PartyContainer from "./PartyContainer";
+
+function Party({partyCards, setPartyCards, handleCardDelete, className}){
     return(
         <div>
             <h1>Party Component</h1>
-            <StyledPartyContainer partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete = {handleCardDelete}/>
-            <ProgressBar bgcolor = {"red"} completed = {80}/>
+            <PartyContainer className = {className} partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete = {handleCardDelete}/>
+            <StyledProgressBar bgcolor = {"red"} completed = {"50"}/>
         </div>
     )
 }

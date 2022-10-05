@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { StyledCharacterCard } from "./component styles/CharacterChard.style";
+import { StyledSubContainer } from "./component styles/SubContainer.style";
 function PartyContainer({className, partyCards, setPartyCards, handleCardDelete}){
 
     
@@ -11,9 +12,9 @@ function PartyContainer({className, partyCards, setPartyCards, handleCardDelete}
 
 
     return(
-        <div className={className}>
+        <StyledSubContainer className={className}>
             {partyCards.map((partyCard)=> <StyledCharacterCard key = {partyCard._id} handleCardDelete = {handleCardDelete} card = {partyCard}/>)}            
-        </div>
+        </StyledSubContainer>
     )
 }
 

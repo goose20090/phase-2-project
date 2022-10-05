@@ -2,7 +2,7 @@ import '../css/App.css';
 import NavBar from './NavBar';
 import {Route, Switch} from "react-router-dom";
 import Party from './Party';
-import {Container} from "./component styles/Container.style"
+import {MainAppContainer} from "./component styles/MainAppContainer.style"
 import {GlobalStyles} from "../GlobalStyles.style"
 import CharacterFinder from './CharacterFinder';
 import React, {useState} from 'react';
@@ -116,7 +116,7 @@ function handleAddToParty(card){
 
 
   return (
-    <Container>
+    <MainAppContainer>
       <GlobalStyles/>
       <NavBar/>
       <Switch>
@@ -130,7 +130,7 @@ function handleAddToParty(card){
           <Home/>
         </Route>
       </Switch>
-    </Container >
+    </MainAppContainer >
   );
 }
 

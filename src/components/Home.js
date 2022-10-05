@@ -4,7 +4,7 @@ function Home(){
     return(
         <>
         <h1>Home</h1>
-        <h2>The forces of Sauron are amassing in the East. The one true ring has revealed itself to Rivendell. It is your task to build a party of Nine, to take it to be destroyed in the fires of Mount Doom. </h2>
+        <h2>The forces of Sauron are amassing in the East. To take the ring to be destroyed in the fires of Mount Doom, a party of nine must be built. Your task is to build this party. </h2>
         </>
     )
 }
