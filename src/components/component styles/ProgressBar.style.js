@@ -1,12 +1,5 @@
 import styled from "styled-components";
-import ProgressBar from "../ProgressBar";
 
-export const StyledProgressBar = styled(ProgressBar)`
-
-
-
-
-`
 
 export const StyledContainer = styled.div`
 

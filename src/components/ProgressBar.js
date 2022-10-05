@@ -2,7 +2,7 @@ import React from "react";
 
 import { StyledContainer, StyledFiller, StyledLabel } from "./component styles/ProgressBar.style";
 
-function ProgressBar({bgcolor, completed, className}){
+function ProgressBar({completed, className}){
 
     return(
         <StyledContainer className= {className}>

@@ -5,7 +5,7 @@ import Party from './Party';
 import {MainAppContainer} from "./component styles/MainAppContainer.style"
 import {GlobalStyles} from "../GlobalStyles.style"
 import CharacterFinder from './CharacterFinder';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Home from './Home';
 
 function App() {
@@ -34,7 +34,21 @@ function App() {
         ...formData,
         [e.target.name]: `${e.target.value}`
     })
-}
+  } 
+
+  // State for Progress Bar Component
+
+  const [progress, setProgress] = useState(partyCards.length)
+
+  // make ProgressBar state dependent on partyCards length (ie. number of members of party)
+
+  useEffect(()=> {
+    let percentageProgress = Math.round((partyCards.length / 9) * 100)
+    console.log(percentageProgress)
+    setProgress(percentageProgress)
+  }, [partyCards])
+
+
 
 // Capitalise form Data to prepare GET request to API
 
@@ -110,13 +124,14 @@ function handleAddToParty(card){
 
 
 
+
   return (
     <MainAppContainer>
       <GlobalStyles/>
       <NavBar/>
       <Switch>
         <Route exact path = "/party">
-          <Party partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete= {handlePartyCardDelete}/>
+          <Party partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete= {handlePartyCardDelete} progress = {progress}/>
         </Route>
         <Route exact path = "/finder">
           <CharacterFinder cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>

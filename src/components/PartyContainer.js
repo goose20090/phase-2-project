@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { StyledCharacterCard } from "./component styles/CharacterChard.style";
 import { StyledSubContainer } from "./component styles/SubContainer.style";
+
 function PartyContainer({className, partyCards, setPartyCards, handleCardDelete}){
 
     
