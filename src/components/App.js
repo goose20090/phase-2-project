@@ -1,5 +1,6 @@
 import '../css/App.css';
 import {StyledNavBar} from "./component styles/NavBar.style"
+import SuggestionsList from './SuggestionsList';
 import {Route, Switch} from "react-router-dom";
 import Party from './Party';
 import {MainAppContainer} from "./component styles/MainAppContainer.style"
@@ -141,6 +142,9 @@ function handleAddToParty(card){
         </Route>
         <Route exact path = "/finder">
           <CharacterFinder progress = {progress} cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>
+        </Route>
+        <Route exact path = "/suggestions">
+          <SuggestionsList/>
         </Route>
         <Route exact path = "/">
           <Home/>

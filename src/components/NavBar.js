@@ -35,6 +35,16 @@ function NavBar({className}){
             >
                 Character Finder
             </StyledNavLink>
+            <StyledNavLink
+            to= "/suggestions"
+            exact
+            activeStyle={{
+                background: "#5c1014"
+            }}
+            
+            >
+                Suggestions
+            </StyledNavLink>
         </div>
     )
 }

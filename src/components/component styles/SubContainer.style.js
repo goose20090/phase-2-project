@@ -7,5 +7,6 @@ export const StyledSubContainer = styled.div`
     height: 400px;
     border-color: black;
     border: 5px solid black;
+    overflow: auto;
 
 `
