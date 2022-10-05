@@ -1,37 +1,15 @@
 import React from "react";
 
-function ProgressBar({bgcolor, completed, className, StyledContainer}){
+import { StyledContainer, StyledFiller, StyledLabel } from "./component styles/ProgressBar.style";
 
-    // const containerStyles = {
-    //     height: 20,
-    //     width: "80%",
-    //     backgroundColor: "blue",
-    //     borderRadius: 50,
-    //     margin: 5
-    // }
-
-    // const fillerStyles = {
-    //     height: "100%",
-    //     width: `${completed}%`,
-    //     backgroundColor: bgcolor,
-    //     borderRadius: "inherit",
-    //     textAlign: "right"
-    // }
-
-    // const labelStyles ={
-    //     padding: 5,
-    //     color: "white",
-    //     fontWeight: "bold"
-    // }
+function ProgressBar({bgcolor, completed, className}){
 
     return(
-        <div className= {className}>
-            <div>
-                <div>
-                    <span>{`${completed}%`} </span>
-                </div>
-            </div>
-        </div>
+        <StyledContainer className= {className}>
+            <StyledFiller completed = {completed}>
+                <StyledLabel>{`${completed}%`} </StyledLabel>
+            </StyledFiller>
+        </StyledContainer>
     )
 }
 

@@ -12,18 +12,18 @@ export const StyledContainer = styled.div`
 
         height: 20;
         width: 80%;
-        background-color: blue;
-        border-radius: 50;
-        margin: 5;
+        background-color: white;
+        border-radius: 50px;
+        margin: 5px;
 
 `
 
 export const StyledFiller = styled.div`
 
     height: 100%;
-    width: 100%;
+    width: ${((props)=>props.completed)}%;
 
-    background-color: red;
+    background-color: brown;
     border-radius: inherit;
     text-align: right;
 

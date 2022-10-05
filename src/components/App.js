@@ -110,11 +110,6 @@ function handleAddToParty(card){
 
 
 
-
-
-
-
-
   return (
     <MainAppContainer>
       <GlobalStyles/>
