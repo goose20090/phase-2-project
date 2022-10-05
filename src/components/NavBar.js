@@ -7,7 +7,7 @@ function NavBar(){
         width: "80px",
         padding: "12px",
         margin: "0 100px 6px",
-        background: "blue",
+        background: "#DC824F",
         textDecoration: "none",
         color: "white",
       }
@@ -21,7 +21,7 @@ function NavBar(){
             style = {linkStyles}
             
             activeStyle = {{
-                background: "darkblue",
+                background: "#5c1014",
             }}
             >
                 Home
@@ -33,7 +33,7 @@ function NavBar(){
             style = {linkStyles}
             
             activeStyle = {{
-                background: "darkblue",
+                background: "#5c1014",
             }}
             >
                 Party
@@ -45,7 +45,7 @@ function NavBar(){
             style = {linkStyles}
             
             activeStyle = {{
-                background: "darkblue",
+                background: "#5c1014",
             }}
             >
                 Character Finder

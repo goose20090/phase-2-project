@@ -55,7 +55,10 @@ function App() {
 function capitaliseString(string){
   const words = string.split(" ");
   for (let i = 0; i < words.length; i++){
-    words[i]= words[i][0].toUpperCase() + words[i].substr(1).toLowerCase()
+    if (words[i].length === 2){
+      words[i].toUpperCase()
+    }
+    else {words[i]= words[i][0].toUpperCase() + words[i].substr(1).toLowerCase()}
   }
 
   return words.join(" ")
