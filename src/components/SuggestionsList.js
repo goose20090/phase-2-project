@@ -1,6 +1,8 @@
 import React from "react";
 import {StyledSubContainer} from "../components/component styles/SubContainer.style"
 import {StyledList, StyledListItem} from "../components/component styles/List.style"
+import {ToastContainer, toast} from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 
 function SuggestionsList({className}){
@@ -10,7 +12,7 @@ function SuggestionsList({className}){
     function copyName(e){
         let name = e.target.textContent;
         navigator.clipboard.writeText(name)
-
+        toast.success(`"${name}" copied to clipboard`, {position: toast.POSITION.BOTTOM_RIGHT})
         console.log("Copied the text:" + name)
 
     }
@@ -23,6 +25,7 @@ function SuggestionsList({className}){
                     {characterArr.map((character)=> <StyledListItem key = {character} onClick={copyName}>{character}</StyledListItem>)}
                 </StyledList>
             </StyledSubContainer>
+            <ToastContainer/>
         </div>
     )}
 
