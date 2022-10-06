@@ -43,13 +43,20 @@ function App() {
 
   const [progress, setProgress] = useState(partyCards.length)
 
-  // make ProgressBar state dependent on partyCards length (ie. number of members of party)
+  // Function to set Progress Bar percentage (called in useEffect on App's first load, handleAddToParty and handlePartyCardDelete)
 
-  useEffect(()=> {
-    let percentageProgress = Math.round((partyCards.length / 9) * 100)
+  function setProgressBarPercentage(){
+    fetch("http://localhost:3000/party")
+    .then(res=>res.json())
+    .then(res=>{
+      let percentageProgress = Math.round((res.length / 9) * 100)
     console.log(percentageProgress)
     setProgress(percentageProgress)
-  }, [partyCards])
+    })
+  }
+  useEffect(()=> {
+    setProgressBarPercentage()
+  }, [])
 
 
 
@@ -90,6 +97,7 @@ function handleSubmit(e){
       .then((res)=>{
           console.log(res);
           res.docs.length ? setFinderCards([...finderCards, res.docs[0]]) : showToastErrorMessage("No matching character found!")
+          setProgressBarPercentage();
       })
 }
 
@@ -120,6 +128,7 @@ function handlePartyCardDelete(card, e){
   .then(res=> console.log(res));
   const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
   setPartyCards(updatedCards);
+  setProgressBarPercentage();
   showToastErrorMessage(`${card.name} has been removed from your party`)
 }
 
@@ -138,7 +147,8 @@ function handleAddToParty(card){
   .then(res=>res.json())
   .then((res)=> {
     console.log(res)
-    handleFinderCardDelete(card)
+    handleFinderCardDelete(card);
+    setProgressBarPercentage();
     showToastSuccessMessage(`${res.name} has been added to your party!`)
   })
 }

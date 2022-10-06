@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css"
 
 function SuggestionsList({className}){
 
-    const characterArr = ["Aragorn II Elessar", "Arwen", "Balin", "Bard", "Beorn", "Beren", "Bilbo Baggins", "Boromir", "Celeborn", "Celebrimbor", "Denethor II", "Eärendil", "Elwing", "Elendil", "Elrond", "Éomer", "Éowyn", "Faramir", "Fëanor", "Fíli and Kíli", "Fingolfin", "Finrod", "Frodo Baggins", "Galadriel", "Gandalf", "Gil-galad", "Glorfindel", "Gimli", "Goldberry", "Gollum", "Gríma Wormtongue", "Húrin", "Idril", "Isildur", "Legolas", "Lúthien", "Maedhros", "Melian", "Meriadoc Brandybuck", "Morgoth", "Peregrin Took", "Radagast", "Samwise Gamgee", "Saruman", "Sauron", "Shelob", "Smaug", "Théoden", "Thingol", "Thranduil", "Thorin II Oakenshield", "Tom Bombadil", "Treebeard", "Tuor", "Túrin", "Ungoliant", "Watcher in the Water"]
+    const characterArr = ["Aragorn II Elessar", "Arwen", "Balin", "Bard", "Beorn", "Beren", "Bilbo Baggins", "Boromir", "Celeborn", "Celebrimbor", "Denethor II", "Eärendil", "Elwing", "Elendil", "Elrond", "Éomer", "Éowyn", "Faramir", "Fëanor", "Fíli and Kíli", "Fingolfin", "Finrod", "Frodo Baggins", "Galadriel", "Gandalf", "Gil-galad", "Glorfindel", "Gimli", "Goldberry", "Gollum", "Gríma Wormtongue", "Húrin", "Idril", "Isildur", "Legolas", "Lúthien", "Maedhros", "Melian", "Melkor", "Meriadoc Brandybuck", "Peregrin Took", "Radagast", "Samwise Gamgee", "Saruman", "Sauron", "Shelob", "Smaug", "Théoden", "Thingol", "Thranduil", "Thorin II Oakenshield", "Tom Bombadil", "Treebeard", "Tuor", "Túrin", "Ungoliant", "Watcher in the Water"]
 
     function copyName(e){
         let name = e.target.textContent;
