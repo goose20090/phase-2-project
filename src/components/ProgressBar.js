@@ -5,11 +5,14 @@ import { StyledContainer, StyledFiller, StyledLabel } from "./component styles/P
 function ProgressBar({completed, className}){
 
     return(
+        <>
         <StyledContainer className= {className}>
             <StyledFiller completed = {completed}>
                 <StyledLabel>{`${completed}%`} </StyledLabel>
             </StyledFiller>
         </StyledContainer>
+        
+        </>
     )
 }
 

@@ -122,14 +122,20 @@ function handleFinderCardDelete(card, e){
 }
 
 function handlePartyCardDelete(card, e){
-  fetch(`http://localhost:3000/party/${card.id}`,{
-    method: "DELETE"
-  })
-  .then(res=> console.log(res));
-  const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
-  setPartyCards(updatedCards);
-  setProgressBarPercentage();
-  showToastErrorMessage(`${card.name} has been removed from your party`)
+
+  if (card.name === "Frodo Baggins"){
+    showToastErrorMessage("Frodo is the ring bearer! He must be in your party.")
+  }
+  else{
+    fetch(`http://localhost:3000/party/${card.id}`,{
+      method: "DELETE"
+    })
+    .then(res=> console.log(res));
+    const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
+    setPartyCards(updatedCards);
+    setProgressBarPercentage();
+    showToastErrorMessage(`${card.name} has been removed from your party`)
+  }
 }
 
 
