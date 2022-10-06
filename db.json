@@ -13,47 +13,6 @@
       "name": "Frodo Baggins",
       "wikiUrl": "http://lotr.wikia.com//wiki/Frodo_Baggins",
       "id": 1
-    },
-    {
-      "_id": "5cd99d4bde30eff6ebccfd0d",
-      "height": "1.22m (4'0\")",
-      "race": "Hobbit",
-      "gender": "Male",
-      "birth": "April 6 ,2980",
-      "spouse": "Rosie Cotton",
-      "death": "Still alive, after going to the ,Undying Lands, in ,FO 61",
-      "realm": "",
-      "hair": "Blond (movie)",
-      "name": "Samwise Gamgee",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Samwise_Gamgee",
-      "id": 3
-    },
-    {
-      "_id": "5cd99d4bde30eff6ebccfea0",
-      "height": "",
-      "race": "Maiar",
-      "gender": "Male",
-      "birth": "Before the the Shaping of Arda",
-      "spouse": "",
-      "death": "January 253019 ,Battle of the Peak immortal",
-      "realm": "",
-      "hair": "Grey, later white",
-      "name": "Gandalf",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf",
-      "id": 5
-    },
-    {
-      "_id": "5cdbdecb6dc0baeae48cfa8e",
-      "death": "Immortal",
-      "birth": "Before the creation of ,Arda",
-      "hair": "Dark",
-      "realm": "Utumno,Angband,Middle-earth,Beleriand",
-      "height": "Any size by choice",
-      "spouse": "NaN",
-      "gender": "Male",
-      "name": "Melkor",
-      "race": "Ainur",
-      "id": 6
     }
   ]
 }
