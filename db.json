@@ -43,17 +43,16 @@
       "id": 3
     },
     {
-      "_id": "5cd99d4bde30eff6ebccfc57",
-      "height": "",
-      "race": "Human",
-      "gender": "Male",
-      "birth": "TA 2978",
-      "spouse": "",
-      "death": "February 26 ,3019",
-      "realm": "",
-      "hair": "Dark (book) Light brown (movie)",
-      "name": "Boromir",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Boromir",
+      "_id": "5cdbdecb6dc0baeae48cfaaa",
+      "death": "Unknown; possibly still alive",
+      "birth": "Possibly pre First Age",
+      "hair": "None",
+      "realm": "Doors of Durin",
+      "height": "Huge",
+      "spouse": "Most likely none",
+      "gender": "Most likely male",
+      "name": "Watcher in the Water",
+      "race": "Urulóki",
       "id": 4
     }
   ]

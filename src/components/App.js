@@ -8,6 +8,8 @@ import {GlobalStyles} from "../GlobalStyles.style"
 import CharacterFinder from './CharacterFinder';
 import React, {useEffect, useState} from 'react';
 import Home from './Home';
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -87,11 +89,19 @@ function handleSubmit(e){
       .then(res=> res.json())
       .then((res)=>{
           console.log(res);
-          res.docs.length ? setFinderCards([...finderCards, res.docs[0]]) : console.log('no matching character')
+          res.docs.length ? setFinderCards([...finderCards, res.docs[0]]) : showToastErrorMessage("No matching character found!")
       })
 }
 
+// Toast notifications
 
+function showToastErrorMessage(message){
+  toast.error(message, {position: toast.POSITION.BOTTOM_LEFT})
+}
+
+function showToastSuccessMessage(message){
+  toast.success(message, {position: toast.POSITION.BOTTOM_LEFT})
+}
 
 
 
@@ -110,6 +120,7 @@ function handlePartyCardDelete(card, e){
   .then(res=> console.log(res));
   const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
   setPartyCards(updatedCards);
+  showToastErrorMessage(`${card.name} has been removed from your party`)
 }
 
 
@@ -125,7 +136,11 @@ function handleAddToParty(card){
     body: JSON.stringify(card)
   })
   .then(res=>res.json())
-  .then(res=> console.log(res))
+  .then((res)=> {
+    console.log(res)
+    handleFinderCardDelete(card)
+    showToastSuccessMessage(`${res.name} has been added to your party!`)
+  })
 }
 
 
@@ -150,6 +165,7 @@ function handleAddToParty(card){
           <Home/>
         </Route>
       </Switch>
+      <ToastContainer/>
     </MainAppContainer >
   );
 }
