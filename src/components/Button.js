@@ -1,15 +1,21 @@
 import React from "react";
 
-function Button({className, buttonLabel, handleAddToParty, card}){
+function Button({className, buttonLabel, handleAddToParty, card, clickFunction, buttonStatus}){
 
-    function handleClick(){
-        handleAddToParty(card)
+    function handleClick(e){
 
+        if (!card){
+        clickFunction(e)
+        }
+
+        else {
+            handleAddToParty(card)
+        }
     }
 
 
     return (
-        <button onClick = {handleClick} className= {className}>{buttonLabel}</button>
+        <button disabled = {buttonStatus} onClick = {handleClick} className= {className}>{buttonLabel}</button>
     )
 }
 

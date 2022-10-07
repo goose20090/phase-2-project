@@ -1,8 +1,13 @@
 import React from "react";
+import {StyledButton} from "./component styles/Button.style"
 
 
 
 function ProgressBar({completed, className, buttonStatus}){
+
+    function moveToLaunch(e){
+        window.location.href= '/launch'
+    }
 
     return(
         <div className={className}>
@@ -11,10 +16,11 @@ function ProgressBar({completed, className, buttonStatus}){
                 <span>{`${completed}%`} </span>
             </div>
         </div>
-        <button
-        disabled = {buttonStatus}
-        onClick= {event=> window.location.href= '/launch'}
-        >Launch Party</button>
+        <StyledButton
+        buttonStatus= {buttonStatus}
+        clickFunction = {moveToLaunch}
+        buttonLabel = "Launch Party"
+        />
         
         </div>
     )

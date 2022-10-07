@@ -82,6 +82,48 @@
       "name": "Galadriel",
       "wikiUrl": "http://lotr.wikia.com//wiki/Galadriel",
       "id": 8
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfc38",
+      "height": "1.25m (4'1\")",
+      "race": "Hobbit",
+      "gender": "Male",
+      "birth": "22 September ,TA 2890",
+      "spouse": "None",
+      "death": "Unknown (Last sighting 29 SeptemberTA 3021,) (,SR 1421,)",
+      "realm": "",
+      "hair": "Brown, later white",
+      "name": "Bilbo Baggins",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Bilbo_Baggins",
+      "id": 9
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfc38",
+      "height": "1.25m (4'1\")",
+      "race": "Hobbit",
+      "gender": "Male",
+      "birth": "22 September ,TA 2890",
+      "spouse": "None",
+      "death": "Unknown (Last sighting 29 SeptemberTA 3021,) (,SR 1421,)",
+      "realm": "",
+      "hair": "Brown, later white",
+      "name": "Bilbo Baggins",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Bilbo_Baggins",
+      "id": 10
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfc38",
+      "height": "1.25m (4'1\")",
+      "race": "Hobbit",
+      "gender": "Male",
+      "birth": "22 September ,TA 2890",
+      "spouse": "None",
+      "death": "Unknown (Last sighting 29 SeptemberTA 3021,) (,SR 1421,)",
+      "realm": "",
+      "hair": "Brown, later white",
+      "name": "Bilbo Baggins",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Bilbo_Baggins",
+      "id": 11
     }
   ]
 }
