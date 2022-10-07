@@ -18,7 +18,7 @@ function CharacterCard({className, card, handleCardDelete, handleAddToParty }){
 
     <p>{height}</p>
     <p>{birth}</p>
-    {match.url === "/finder" ? <StyledButton card = {card} handleAddToParty = {handleAddToParty} backgroundColor = "aquamarine" buttonLabel={"Add To Party"}/>: null}
+    {match.url === "/finder" ? <StyledButton card = {card} handleAddToParty = {handleAddToParty} buttonLabel={"Add To Party"}/>: null}
     </div>
    ) 
 }

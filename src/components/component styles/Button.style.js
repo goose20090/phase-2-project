@@ -3,13 +3,16 @@ import Button from "../Button";
 
 export const StyledButton = styled(Button)`
 
+display: inline-block;
+
 // Button styled using following template: https://codepen.io/manelsworld/pen/YvPVaw
 
+button{
   margin: 10px auto;
   width: 100px;
   letter-spacing: 2px;
   border-radius: 8px;
-  font-family: 'Skranji', cursive;
+  font-family: 'kelt', cursive;
   color: #ffc000;
   font-size: 18px;
   font-weight: 400;
@@ -34,13 +37,27 @@ export const StyledButton = styled(Button)`
   box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2)
 }
 
+}
+
+.disabled{
+    background: grey;
+    color: white;
+    border-color: white;
+
+    &:hover{
+        background: grey;
+        color: white;
+    }
+}
+
 `
 
 export const ButtonLabel = styled.label`
 
 
+
     letter-spacing: 2px;
-    font-family: 'Skranji', cursive;
+    font-family: 'kelt';
     color: #ffc000;
     font-size: 26px;
     font-weight: 400;

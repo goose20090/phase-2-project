@@ -15,7 +15,9 @@ function Button({className, buttonLabel, handleAddToParty, card, clickFunction, 
 
 
     return (
-        <button disabled = {buttonStatus} onClick = {handleClick} className= {className}>{buttonLabel}</button>
+        <div className={className}>
+            <button disabled = {buttonStatus} onClick = {handleClick} className= {buttonStatus? "disabled": null}>{buttonLabel}</button>
+        </div>
     )
 }
 
