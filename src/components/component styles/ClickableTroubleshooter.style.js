@@ -9,15 +9,16 @@ h3 {
     margin: 10px;
     color: blue;
     text-decoration: underline;
+    font-size: 22px;
     :hover{
         cursor: pointer;
     }
 }
 
 p{
-    transition: opacity 0.2s;
+    transition: opacity 1s;
     margin: 10px;
-
+    font-size: 20px;
 }
 
 p.fade-out{

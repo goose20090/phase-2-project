@@ -19,7 +19,6 @@ function SuggestionsList({className}){
     return (
         <div>
             <h1>Search Suggestions</h1>
-            <p>Accents and Epiphets must be exact</p>
             <StyledSubContainer className={className}>
                 <StyledList>
                     {characterArr.map((character)=> <StyledListItem key = {character} onClick={copyName}>{character}</StyledListItem>)}

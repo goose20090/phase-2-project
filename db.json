@@ -13,6 +13,75 @@
       "name": "Frodo Baggins",
       "wikiUrl": "http://lotr.wikia.com//wiki/Frodo_Baggins",
       "id": 1
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfea0",
+      "height": "",
+      "race": "Maiar",
+      "gender": "Male",
+      "birth": "Before the the Shaping of Arda",
+      "spouse": "",
+      "death": "January 253019 ,Battle of the Peak immortal",
+      "realm": "",
+      "hair": "Grey, later white",
+      "name": "Gandalf",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf",
+      "id": 4
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfc07",
+      "height": "",
+      "race": "Elf",
+      "gender": "Female",
+      "birth": "TA 241",
+      "spouse": "Aragorn II Elessar",
+      "death": "FO 121",
+      "realm": "Reunited Kingdom",
+      "hair": "Black",
+      "name": "Arwen",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Arwen",
+      "id": 5
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfd81",
+      "height": "",
+      "race": "Elf",
+      "gender": "Male",
+      "birth": "",
+      "spouse": "",
+      "death": "Still alive, departed to ,Aman ,FO 120",
+      "realm": "",
+      "hair": "Uncertain (book), Blonde (films)",
+      "name": "Legolas",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Legolas",
+      "id": 6
+    },
+    {
+      "_id": "5cdbdecb6dc0baeae48cfaaa",
+      "death": "Unknown; possibly still alive",
+      "birth": "Possibly pre First Age",
+      "hair": "None",
+      "realm": "Doors of Durin",
+      "height": "Huge",
+      "spouse": "Most likely none",
+      "gender": "Most likely male",
+      "name": "Watcher in the Water",
+      "race": "Urulóki",
+      "id": 7
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfd06",
+      "height": "Tall",
+      "race": "Elf",
+      "gender": "Female",
+      "birth": "YT 1362",
+      "spouse": "Celeborn",
+      "death": "Still alive: Departed over the sea on ,September 29 ,3021",
+      "realm": "Eregion,Lothlórien,Caras Galadhon",
+      "hair": "Golden",
+      "name": "Galadriel",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Galadriel",
+      "id": 8
     }
   ]
 }

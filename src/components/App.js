@@ -10,6 +10,7 @@ import React, {useEffect, useState} from 'react';
 import Home from './Home';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LaunchPage from './LaunchPage';
 
 function App() {
 
@@ -52,12 +53,17 @@ function App() {
       let percentageProgress = Math.round((res.length / 9) * 100)
     console.log(percentageProgress)
     setProgress(percentageProgress)
+    if(percentageProgress === 100){
+      setButtonStatus(false)
+    }
+    else setButtonStatus(true)
     })
   }
   useEffect(()=> {
     setProgressBarPercentage()
   }, [])
 
+  const [buttonStatus, setButtonStatus]= useState(true)
 
 
 // Capitalise form Data to prepare GET request to API
@@ -169,13 +175,16 @@ function handleAddToParty(card){
       <StyledNavBar/>
       <Switch>
         <Route exact path = "/party">
-          <Party partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete= {handlePartyCardDelete} progress = {progress}/>
+          <Party partyCards = {partyCards} setPartyCards = {setPartyCards} handleCardDelete= {handlePartyCardDelete} progress = {progress} buttonStatus = {buttonStatus}/>
         </Route>
         <Route exact path = "/finder">
-          <CharacterFinder progress = {progress} cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete}/>
+          <CharacterFinder progress = {progress} cards = {finderCards} handleChange = {handleChange} handleSubmit= {handleSubmit} formData = {formData} handleAddToParty={handleAddToParty} handleCardDelete = {handleFinderCardDelete} buttonStatus = {buttonStatus}/>
         </Route>
         <Route exact path = "/suggestions">
           <SuggestionsList/>
+        </Route>
+        <Route exact path = "/launch">
+          <LaunchPage/>
         </Route>
         <Route exact path = "/">
           <Home/>

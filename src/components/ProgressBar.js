@@ -1,18 +1,22 @@
 import React from "react";
 
-import { StyledContainer, StyledFiller, StyledLabel } from "./component styles/ProgressBar.style";
 
-function ProgressBar({completed, className}){
+
+function ProgressBar({completed, className, buttonStatus}){
 
     return(
-        <>
-        <StyledContainer className= {className}>
-            <StyledFiller completed = {completed}>
-                <StyledLabel>{`${completed}%`} </StyledLabel>
-            </StyledFiller>
-        </StyledContainer>
+        <div className={className}>
+        <div className= "container">
+            <div className = "filler" completed = {completed}>
+                <span>{`${completed}%`} </span>
+            </div>
+        </div>
+        <button
+        disabled = {buttonStatus}
+        onClick= {event=> window.location.href= '/launch'}
+        >Launch Party</button>
         
-        </>
+        </div>
     )
 }
 

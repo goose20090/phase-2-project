@@ -1,33 +1,39 @@
+import ProgressBar  from "../ProgressBar";
 import styled from "styled-components";
 
+export const StyledProgressBar = styled(ProgressBar)`
 
-export const StyledContainer = styled.div`
-
+.container{
         height: 20;
         width: 70%;
         background-color: #5c1014;
         border-radius: 50px;
         margin: 5px;
+        display: inline-block;
 
-`
+}
 
-export const StyledFiller = styled.div`
-
-    height: 100%;
+.filler{
+        height: 100%;
     width: ${((props)=>props.completed)}%;
 
     background-color: #FBC841;
     border-radius: inherit;
     text-align: right;
 
+}
 
-`
-
-export const StyledLabel = styled.span`
-
+span{
         padding: 5;
         color: black;
         font-weight: bold;
         margin-right: 10px;
-    
+}
+
+button{
+
+
+        display: inline-block;
+        margin-left: 2.5%;
+}
 `
