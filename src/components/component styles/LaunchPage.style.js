@@ -3,9 +3,6 @@ import LaunchPage from "../LaunchPage";
 
 export const StyledLaunchPage = styled(LaunchPage)`
 
-
-
-
     ul {
         font-size: 50px;
         list-style: none;
@@ -15,43 +12,26 @@ export const StyledLaunchPage = styled(LaunchPage)`
     }
 
     h2{
-        margin-left: 50%
+        margin-left: 50%;
+        font-size: 30px;
     }
-    .animated{
+
+    h3{
+        font-size: 50px;
+        margin-left: 20%;
+    }
+    .visible{
         animation: fadein 2s;
     }
-    .party-member{
+    .not-visible{
         opacity: 0;
 
     }
 
-    /* .partymember-0 {
-        animation: fadein 2s;
+    button{
+        margin-left: 33%;
     }
-    .partymember-1{
-        animation: fadein 4s;
-    }
-    .partymember-2{
-        animation: fadein 6s;
-    }
-    .partymember-3{
-        animation: fadein 8s;
-    }
-    .partymember-4{
-        animation: fadein 10s;
-    }
-    .partymember-5{
-        animation: fadein 12s;
-    }
-    .partymember-6{
-        animation: fadein 14s;
-    }
-    .partymember-7{
-        animation: fadein 16s;
-    }
-    .partymember-8{
-        animation: fadein 18s;
-    } */
+
     @keyframes fadein{
         from {opacity: 0;}
         to {opacity: 1;}

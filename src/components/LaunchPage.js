@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { StyledButton } from "./component styles/Button.style";
 
 function LaunchPage({className}){
 
@@ -11,18 +12,43 @@ function LaunchPage({className}){
     }, [])
 
     useEffect(()=>{
-        const timer = setTimeout(fadeInFrodo, 1000);
-        return ()=> clearTimeout(timer)
+        const timerIntro = setTimeout(fadeInIntro, 1000)
+        const timerParty = setTimeout(fadeInParty, 2000);
+        const timerValar = setTimeout(fadeInValarLine, 5500);
+        return ()=> clearTimeout(timerIntro, timerParty, timerValar)
         
     }, [])
 
-    function fadeInFrodo(){
-        const frodo = document.querySelector('.party-member')
-        console.log(frodo)
-        frodo.className = "animated"
-        console.log(frodo)
+    function fadeInIntro(){
+        let intro = document.getElementById('intro')
+        intro.className = 'visible'
     }
 
+    function fadeInParty(){
+
+        for(let i = 0; i< 10; i ++){
+
+            setTimeout(()=>{
+                fadeInEachPartyMember(i)
+            }, i * 200)
+           
+        }
+    }
+
+    function fadeInEachPartyMember(i){
+        let partyMembers = document.querySelectorAll('.not-visible')
+        partyMembers[0].className = 'visible'
+        
+    }
+
+    function fadeInValarLine(){
+        let valarLine = document.getElementById('valar')
+        valarLine.className= "visible"
+
+    }
+
+
+    
 
     function partyArrayMaker(party){
         let array = []
@@ -52,13 +78,13 @@ function LaunchPage({className}){
     
     return(
         <div className={className}>
-            <h1>The party is chosen:</h1>
+            <h1 id = "intro" className="not-visible">The party is chosen:</h1>
             <ul>
-                {partyArr.map((partymember)=><li key = {partymember} className = {"party-member"}>{partymember}</li>)}
+                {partyArr.map((partymember)=><li key = {partymember} className = {"not-visible"}>{partymember}</li>)}
             </ul>
-            <h2>have formed a Fellowship.</h2>
+            <h2 className="not-visible">have formed a Fellowship.</h2>
             <br></br>
-            <h2>May the Valar speed them on their quest.</h2>
+            <h3 className = "not-visible" id = "valar">May the Valar speed them on their quest.</h3>
         </div>
     )
 
