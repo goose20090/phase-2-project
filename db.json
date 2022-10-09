@@ -55,6 +55,75 @@
       "name": "Gandalf",
       "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf",
       "id": 7
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfbe6",
+      "height": "198cm (6'6\")",
+      "race": "Human",
+      "gender": "Male",
+      "birth": "March 1 ,2931",
+      "spouse": "Arwen",
+      "death": "FO 120",
+      "realm": "Reunited Kingdom,Arnor,Gondor",
+      "hair": "Dark",
+      "name": "Aragorn II Elessar",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Aragorn_II_Elessar",
+      "id": 8
+    },
+    {
+      "_id": "5cdbdecb6dc0baeae48cfa5b",
+      "death": "Still Alive",
+      "birth": "FA 503",
+      "hair": "Dark",
+      "realm": "NaN",
+      "height": "NaN",
+      "spouse": "Eärendil",
+      "gender": "Female",
+      "name": "Elwing",
+      "race": "Half-elven",
+      "id": 9
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfd1f",
+      "height": "Tall",
+      "race": "Elf",
+      "gender": "Male",
+      "birth": "Possibly ,YT",
+      "spouse": "None",
+      "death": "FA 510",
+      "realm": "",
+      "hair": "Golden",
+      "name": "Glorfindel",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Glorfindel",
+      "id": 10
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfd93",
+      "height": "Tall",
+      "race": "Elf",
+      "gender": "Male",
+      "birth": "During the ,Noontide of Valinor",
+      "spouse": "None",
+      "death": "FA 587",
+      "realm": "",
+      "hair": "Dark red",
+      "name": "Maedhros",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Maedhros",
+      "id": 11
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfe13",
+      "height": "Tall",
+      "race": "Elf",
+      "gender": "Male",
+      "birth": "First Age",
+      "spouse": "Unnamed wife",
+      "death": "Presumably departed to ,Aman",
+      "realm": "Woodland Realm,Mirkwood",
+      "hair": "Golden",
+      "name": "Thranduil",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Thranduil",
+      "id": 12
     }
   ]
 }

@@ -69,7 +69,9 @@ function LaunchPage({className}){
             <ul>
                 {partyArr.map((partymember)=><li key = {partymember} className = {`partymember-${partyArr.indexOf(partymember)}`}>{partymember}</li>)}
             </ul>
-            <h2>have formed a Fellowship. May the Valar speed them on their quest.</h2>
+            <h2>have formed a Fellowship</h2>
+            <br></br>
+            <h2>May the Valar speed them on their quest.</h2>
         </div>
     )
 
