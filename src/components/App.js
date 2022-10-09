@@ -189,7 +189,7 @@ function handleAddToParty(card){
         <Route exact path = "/launch">
           <StyledLaunchPage/>
         </Route>
-        <Route exact path = "/">
+        <Route path = "/">
           <Home/>
         </Route>
       </Switch>

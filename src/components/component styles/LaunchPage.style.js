@@ -10,13 +10,22 @@ export const StyledLaunchPage = styled(LaunchPage)`
         font-size: 50px;
         list-style: none;
         margin-left: 20%;
+        transition: opacity 2s;
+
     }
 
     h2{
         margin-left: 50%
     }
+    .animated{
+        animation: fadein 2s;
+    }
+    .party-member{
+        opacity: 0;
 
-    .partymember-0 {
+    }
+
+    /* .partymember-0 {
         animation: fadein 2s;
     }
     .partymember-1{
@@ -42,7 +51,7 @@ export const StyledLaunchPage = styled(LaunchPage)`
     }
     .partymember-8{
         animation: fadein 18s;
-    }
+    } */
     @keyframes fadein{
         from {opacity: 0;}
         to {opacity: 1;}
