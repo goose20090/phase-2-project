@@ -14,7 +14,7 @@ function PartyContainer({className, partyCards, setPartyCards, handleCardDelete}
 
     return(
         <StyledSubContainer className={className}>
-            {partyCards.map((partyCard)=> <StyledCharacterCard key = {partyCard._id} handleCardDelete = {handleCardDelete} card = {partyCard}/>)}            
+            {partyCards.map((partyCard)=> <StyledCharacterCard key = {partyCard._id} height = {"180px"} handleCardDelete = {handleCardDelete} card = {partyCard}/>)}            
         </StyledSubContainer>
     )
 }

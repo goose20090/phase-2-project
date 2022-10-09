@@ -110,11 +110,14 @@ function handleSubmit(e){
 // Toast notifications
 
 function showToastErrorMessage(message){
-  toast.error(message, {position: toast.POSITION.BOTTOM_LEFT})
+  toast.error(message, {position: toast.POSITION.BOTTOM_LEFT,
+  className: "removing-toast"})
 }
 
 function showToastSuccessMessage(message){
-  toast.success(message, {position: toast.POSITION.BOTTOM_LEFT})
+  toast.success(message, {position: toast.POSITION.BOTTOM_LEFT,
+    className: "adding-toast"
+  })
 }
 
 

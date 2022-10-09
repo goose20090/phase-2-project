@@ -6,6 +6,9 @@ height: 100vh;
 background-color: lightgoldenrodyellow;
 margin-top: -21px;
 padding: 2.5%;
+--toastify-color-success: gold;
+--toastify-color-error: #8b0000;
+
 
 
 `

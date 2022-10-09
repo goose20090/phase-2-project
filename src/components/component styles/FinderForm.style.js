@@ -7,15 +7,13 @@ export const StyledFinderForm = styled(FinderForm)`
     padding: 10px;
     
     input {
+        margin: 10px;
 
         width: 40%;
         font-size: 20px;
+        font-family: kelt;
     }
 
 
-    button{
-        background-color: #5c1014;
-        color: white;
-    }
-
+    
 `

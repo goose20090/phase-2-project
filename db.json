@@ -15,20 +15,6 @@
       "id": 1
     },
     {
-      "_id": "5cd99d4bde30eff6ebccfea0",
-      "height": "",
-      "race": "Maiar",
-      "gender": "Male",
-      "birth": "Before the the Shaping of Arda",
-      "spouse": "",
-      "death": "January 253019 ,Battle of the Peak immortal",
-      "realm": "",
-      "hair": "Grey, later white",
-      "name": "Gandalf",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf",
-      "id": 4
-    },
-    {
       "_id": "5cd99d4bde30eff6ebccfc07",
       "height": "",
       "race": "Elf",
@@ -43,33 +29,6 @@
       "id": 5
     },
     {
-      "_id": "5cd99d4bde30eff6ebccfd81",
-      "height": "",
-      "race": "Elf",
-      "gender": "Male",
-      "birth": "",
-      "spouse": "",
-      "death": "Still alive, departed to ,Aman ,FO 120",
-      "realm": "",
-      "hair": "Uncertain (book), Blonde (films)",
-      "name": "Legolas",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Legolas",
-      "id": 6
-    },
-    {
-      "_id": "5cdbdecb6dc0baeae48cfaaa",
-      "death": "Unknown; possibly still alive",
-      "birth": "Possibly pre First Age",
-      "hair": "None",
-      "realm": "Doors of Durin",
-      "height": "Huge",
-      "spouse": "Most likely none",
-      "gender": "Most likely male",
-      "name": "Watcher in the Water",
-      "race": "Urulóki",
-      "id": 7
-    },
-    {
       "_id": "5cd99d4bde30eff6ebccfc38",
       "height": "1.25m (4'1\")",
       "race": "Hobbit",
@@ -81,7 +40,21 @@
       "hair": "Brown, later white",
       "name": "Bilbo Baggins",
       "wikiUrl": "http://lotr.wikia.com//wiki/Bilbo_Baggins",
-      "id": 9
+      "id": 6
+    },
+    {
+      "_id": "5cd99d4bde30eff6ebccfea0",
+      "height": "",
+      "race": "Maiar",
+      "gender": "Male",
+      "birth": "Before the the Shaping of Arda",
+      "spouse": "",
+      "death": "January 253019 ,Battle of the Peak immortal",
+      "realm": "",
+      "hair": "Grey, later white",
+      "name": "Gandalf",
+      "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf",
+      "id": 7
     }
   ]
 }

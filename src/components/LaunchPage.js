@@ -14,15 +14,22 @@ function LaunchPage(){
         let string
         for(let i = 0; i< party.length; i++)
         {
-            if (i < party.length - 1){
-            let name = `${party[i].name}, `
-            string ? string = string + name: string = name;
+            if (i === party.length - 2){
+                let name = `${party[i].name} `
+            string = string + name
             }
+
+            else if (i < party.length - 1){
+                let name = `${party[i].name}, `
+                string ? string = string + name: string = name;
+                }
+
             else {
                 let name = `and ${party[i].name}`
                 string = string + name;
             }
         }
+        console.log(string)
         return string;
     }
 

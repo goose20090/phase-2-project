@@ -14,7 +14,7 @@ function ClickableTroubleshooter({className}){
         <p className = {'fade-out'}id = "troubleshoot-content"> 
             Spelling of the character's name, including accents and epiphets, must be exact. 
 
-            Have a look at our <Link to= "/suggestions">Suggested Charcters List</Link> or the the <a href="https://lotr.fandom.com/wiki/Main_Page">Lord of the Rings Wiki</a> to check the right spelling.
+            Have a look at our <Link to= "/suggestions">Suggested Charcters List</Link> or the the <a href="https://lotr.fandom.com/wiki/Main_Page">Lord of the Rings Wiki</a> to double check.
         </p>
     </div>
 )}

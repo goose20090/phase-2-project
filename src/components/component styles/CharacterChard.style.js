@@ -3,7 +3,7 @@ import CharacterCard from "../CharacterCard";
 
 export const StyledCharacterCard = styled(CharacterCard)`
     width: 236px;
-    height: 180px;
+    height: ${((props)=>props.height)};
     background-color: #FBC841;
     margin-left: 5px;
     padding-left: 5px;

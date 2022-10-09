@@ -20,6 +20,7 @@ export const StyledProgressBar = styled(ProgressBar)`
     background-color: #FBC841;
     border-radius: inherit;
     text-align: right;
+    transition: width 1s ease-in-out;
 
 }
 
