@@ -10,7 +10,7 @@ import React, {useEffect, useState} from 'react';
 import Home from './Home';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import LaunchPage from './LaunchPage';
+import {StyledLaunchPage} from './component styles/LaunchPage.style'
 
 function App() {
 
@@ -187,7 +187,7 @@ function handleAddToParty(card){
           <SuggestionsList/>
         </Route>
         <Route exact path = "/launch">
-          <LaunchPage/>
+          <StyledLaunchPage/>
         </Route>
         <Route exact path = "/">
           <Home/>
