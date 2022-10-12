@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import { StyledButton } from "./component styles/Button.style";
 
 function LaunchPage({className}){
-
 
     // State for final party
     const [party, setParty] = useState([])
@@ -48,15 +46,14 @@ function LaunchPage({className}){
 
     function fadeInValarLine(){
         let valarLine = document.getElementById('valar')
-        // let resetButton = document.getElementById('go-again-btb')
         valarLine.className = "visible"
-        // resetButton.style= "opacity: 1"
+
 
 
     }
 
 
-    // Make final party state into an array of a gramatically correct list, ready for appending to DOM
+    // Make final party state into an array of a gramatically correct list, ready to feed into our JSX
 
     function partyArrayMaker(party){
         let array = []
@@ -92,10 +89,7 @@ function LaunchPage({className}){
             </ul>
             <h2 className="not-visible">have formed a Fellowship.</h2>
             <br></br>
-            <h3 className = "not-visible" id = "valar">May the Valar speed them on their quest.</h3>
-            <div id = "button-container">
-            {/* <StyledButton id = {"go-again-btn"} buttonLabel={"Go Again"} className/> */}
-            </div>
+            <h3 className = "not-visible" id = "valar">May the Valar speed them on their quest</h3>
         </div>
     )
 

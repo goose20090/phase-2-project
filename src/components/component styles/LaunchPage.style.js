@@ -25,9 +25,6 @@ export const StyledLaunchPage = styled(LaunchPage)`
         margin-left: 23%;
     }
 
-    #button-container{
-        margin-left: 30%;
-    }
     .visible{
         animation: fadein 2s;
     }
@@ -36,9 +33,8 @@ export const StyledLaunchPage = styled(LaunchPage)`
 
     }
 
-    button{
-        margin-left: 33%;
-    }
+
+
 
     @keyframes fadein{
         from {opacity: 0;}

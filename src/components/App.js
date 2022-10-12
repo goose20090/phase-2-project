@@ -1,7 +1,7 @@
 import '../css/App.css';
 import {StyledNavBar} from "./component styles/NavBar.style"
 import SuggestionsList from './SuggestionsList';
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch, useHistory} from "react-router-dom";
 import Party from './Party';
 import {MainAppContainer} from "./component styles/MainAppContainer.style"
 import {GlobalStyles} from "../GlobalStyles.style"
@@ -13,6 +13,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import {StyledLaunchPage} from './component styles/LaunchPage.style'
 
 function App() {
+
+  const history = useHistory();
 
   // State for Form Component
 
@@ -180,8 +182,6 @@ function handleAddToParty(card){
   })
 }
 }
-
-
 
 
 

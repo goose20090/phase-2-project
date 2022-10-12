@@ -8,7 +8,7 @@ function FinderContainer({className, handleAddToParty, handleChange, handleSubmi
 
     return(
         <StyledSubContainer className={className}>
-            <h2>Search for your favourite character</h2>
+            <h2>Search for characters:</h2>
             <StyledFinderForm  formData = {formData} handleChange= {handleChange} handleSubmit= {handleSubmit}/>
             {cards.map((card)=> <StyledCharacterCard key = {card._id} height = { "fit-to-content"}handleCardDelete= {handleCardDelete} card = {card} handleAddToParty = {handleAddToParty}/>)} 
             <StyledTroubleshooter/>

@@ -30,7 +30,7 @@ display: inline-block;
 
 
 text-decoration: none;
-  width: 120px;
+  width: 140px;
   letter-spacing: 2px;
   border-radius: 8px;
   font-family: 'kelt', cursive;
@@ -47,5 +47,11 @@ text-decoration: none;
   border-bottom: 4px groove #ffb000; */
   box-shadow: inset 0px 0px 5px 3px rgba(1,1,1,0.3);
 
+  &:hover{
+  background: radial-gradient(circle, #e52b2b, #8b0000);
+  box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2)
+}
+
 
 `
+

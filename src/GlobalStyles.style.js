@@ -13,5 +13,9 @@ export const GlobalStyles = createGlobalStyle`
         
     }
 
+    :root{
+    --toastify-color-success: #ffc000;
+    --toastify-color-error: #8b0000;
+    }
 
 `
