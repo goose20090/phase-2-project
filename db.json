@@ -111,20 +111,6 @@
       "name": "Gandalf",
       "wikiUrl": "http://lotr.wikia.com//wiki/Gandalf",
       "id": 10
-    },
-    {
-      "_id": "5cd99d4bde30eff6ebccfcbc",
-      "height": "7' 10\"",
-      "race": "Human",
-      "gender": "Male",
-      "birth": "SA 3119",
-      "spouse": "Unnamed wife",
-      "death": "SA 3441",
-      "realm": "Arnor,Gondor",
-      "hair": "Brown",
-      "name": "Elendil",
-      "wikiUrl": "http://lotr.wikia.com//wiki/Elendil",
-      "id": 11
     }
   ]
 }
