@@ -6,19 +6,27 @@ export const StyledLaunchPage = styled(LaunchPage)`
     ul {
         font-size: 50px;
         list-style: none;
-        margin-left: 20%;
+        margin-left: 33%;
         transition: opacity 2s;
 
     }
 
+    h1{
+        margin-left: 10%;
+    }
+
     h2{
-        margin-left: 50%;
+        margin-left: 66%;
         font-size: 30px;
     }
 
     h3{
         font-size: 50px;
-        margin-left: 20%;
+        margin-left: 23%;
+    }
+
+    #button-container{
+        margin-left: 30%;
     }
     .visible{
         animation: fadein 2s;

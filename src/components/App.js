@@ -14,7 +14,6 @@ import {StyledLaunchPage} from './component styles/LaunchPage.style'
 
 function App() {
 
-
   // State for Form Component
 
   const initialState = {
@@ -151,6 +150,19 @@ function handlePartyCardDelete(card, e){
 // POST request to add party members to json server
   
 function handleAddToParty(card){
+
+  console.log(partyCards)
+
+  let existingCard = partyCards.find((partyCard)=> partyCard.name === card.name)
+  if (existingCard){
+    showToastErrorMessage(`${existingCard.name} is already in your party!`)
+  }
+  else if (progress === 100){
+
+    showToastErrorMessage("Your party is full!")
+  }
+
+  else {
   fetch("http://localhost:3000/party"
   , {
     method: "POST",
@@ -166,6 +178,7 @@ function handleAddToParty(card){
     setProgressBarPercentage();
     showToastSuccessMessage(`${res.name} has been added to your party!`)
   })
+}
 }
 
 

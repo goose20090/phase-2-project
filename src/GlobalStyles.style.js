@@ -12,11 +12,6 @@ export const GlobalStyles = createGlobalStyle`
         background-color: lightgoldenrodyellow;
         
     }
-    :root{
-  // this is the default value below
-  --toastify-color-success: gold;
-  --toastify-color-error: #8b0000;
-}
 
 
 `

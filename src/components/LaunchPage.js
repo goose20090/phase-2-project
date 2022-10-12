@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { StyledButton } from "./component styles/Button.style";
+// import { StyledButton } from "./component styles/Button.style";
 
 function LaunchPage({className}){
 
+
+    // State for final party
     const [party, setParty] = useState([])
 
+    // Setting state for final party pased on json server on component loading
+   
     useEffect(()=>{
         fetch("http://localhost:3000/party")
         .then(res=>res.json())
         .then(res=> setParty(res))
     }, [])
 
+    // Timers to fade in different components by changing class names
     useEffect(()=>{
         const timerIntro = setTimeout(fadeInIntro, 1000)
         const timerParty = setTimeout(fadeInParty, 2000);
@@ -43,12 +48,15 @@ function LaunchPage({className}){
 
     function fadeInValarLine(){
         let valarLine = document.getElementById('valar')
-        valarLine.className= "visible"
+        // let resetButton = document.getElementById('go-again-btb')
+        valarLine.className = "visible"
+        // resetButton.style= "opacity: 1"
+
 
     }
 
 
-    
+    // Make final party state into an array of a gramatically correct list, ready for appending to DOM
 
     function partyArrayMaker(party){
         let array = []
@@ -85,6 +93,9 @@ function LaunchPage({className}){
             <h2 className="not-visible">have formed a Fellowship.</h2>
             <br></br>
             <h3 className = "not-visible" id = "valar">May the Valar speed them on their quest.</h3>
+            <div id = "button-container">
+            {/* <StyledButton id = {"go-again-btn"} buttonLabel={"Go Again"} className/> */}
+            </div>
         </div>
     )
 
