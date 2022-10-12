@@ -8,5 +8,9 @@ export const StyledSubContainer = styled.div`
     border-color: black;
     border: 5px solid black;
     overflow: none;
+    
+    h2{
+        margin-left: 1%;
+    }
 
 `

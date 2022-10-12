@@ -13,7 +13,7 @@ function NavBar({className}){
             {location.pathname === "/launch"? null: 
             
             <div>
-                <h1>Build Your Party</h1>
+                <h1>Middle Earth Party Builder</h1>
                 <StyledNavLink
                 to= "/"
                 exact
