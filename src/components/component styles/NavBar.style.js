@@ -4,25 +4,11 @@ import { NavLink } from "react-router-dom";
 
 export const StyledNavBar = styled(NavBar)`
 
-/* display: "inline-block";
-        width: "80px";
-        padding: "12px";
-        margin: "0 100px 6px";
-        background: "#DC824F";
-        text-decoration: "none";
-        color: "white"; */
-
 `
 
 export const StyledNavLink = styled(NavLink)`
 
-/* display: inline-block;
-width: 80px;
-padding: 12px;
-margin: 0 100px 6px;
-background: #8b0000;
-text-decoration: none;
-color: white; */
+
 
 
 margin: 0 50px 6px;
@@ -41,10 +27,7 @@ text-decoration: none;
   text-align: center;
   padding: 10px 0;
   background: radial-gradient(circle, #8b0000, #8b0000);
-  /* border-top: 4px ridge #ffb000;
-  border-left: 4px groove #ffb000;
-  border-right: 4px ridge #ffb000;
-  border-bottom: 4px groove #ffb000; */
+
   box-shadow: inset 0px 0px 5px 3px rgba(1,1,1,0.3);
 
   &:hover{
