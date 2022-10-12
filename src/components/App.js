@@ -17,8 +17,7 @@ function App() {
   // State for Form Component
 
   const initialState = {
-    name: "",
-    race: ""
+    name: ""
 }
 
   const [formData, setFormData] = useState(initialState)
@@ -103,6 +102,7 @@ function handleSubmit(e){
           console.log(res);
           res.docs.length ? setFinderCards([...finderCards, res.docs[0]]) : showToastErrorMessage("No matching character found!")
           setProgressBarPercentage();
+          setFormData(initialState);
       })
 }
 
