@@ -2,60 +2,64 @@
 
 The Middle Earth Party Builder is a single page React Application which works with [The One Api](https://the-one-api.dev/) to allow users to build their own party of Tolkein characters.
 
-# The Amazing Joke Machine
-
-The Amazing Joke Machine is a web app designed to let the user generate jokes based on themes, submit their own and curate a selection of favourites.
-
-It was partly designed to fulfil a set of passing criteria for the phase 1 project of Flatiron's Software Engineering Course.
-
+It was partly designed to fulfil a set of passing criteria for the phase 2 project of Flatiron's Software Engineering Course.
 
 ## User Experience
 
-- With the Amazing Joke Machine, the user can select a scenario where they may need relevant jokes, click the 'Get a Joke!' button and generate a joke themed around that scenario.
+Clien-side routes can be navigated via the nav bar:
 
-- If they would like multiple jokes themed around that scenario, they can click the 'Get a Bunch!' button.
+![users clicking on navlinks](./gifs/navigating-through-navlinks.gif)
 
-- If they want a joke that is applicable to any situation, they can click the random button. (Note- clicking the 'Get a Bunch!' button when the select element is on default will generate multiple random jokes).
+In the character finder, users can search for Tolkein characters and add them to their party:
 
-- If they want to submit their own jokes they can do so with a form at the bottom of the page. They can submit both one-line and two part jokes, using a toggling checkbox next to the form.
+![users searching for characters and adding them to their party](./gifs/search-for-characters-and-add-to-party.gif)
 
-- After the user has submitted a joke, a new select option will appear on the dropdown- offering them the opportunity to generate jokes they've submitted themselves.
+In the suggestions route, users can click names to copy them to their clickboard before searching:
 
-- All jokes have heart and cross buttons appended to them. Using the cross button, the user can remove any joke they like from the DOM. Using the heart button they can add any joke that they like to their list of favourites.
+![users copying names via a click](./gifs/copying-names-from-suggestions-to-search.gif)
 
-- Cumulatively, this gives the user the opportunity to generate large number of jokes, submit their own into the mix and curate the highest quality ones into a list they can use for their chosen scenario.
+Users can also delete characters in their party:
 
-## Project Requirements of The Amazing Joke Machine
+![users deleting characters via a click](./gifs/deleting-characters-from-party.gif)
 
-1) The app must be a HTML/CSS/JS frontend that accesses data from a public API
+Once the party is full, users can 'launch' their party and be taken to a custom, final screen:
 
-    The api being used for this web app is the [JokeAPI](https://jokeapi.dev/). Besides having a database of 1369 jokes, it also offers a variety of filtering features. The user can interact with those features by using the different options of the drop-down menu.
+![final screen displaying the names of the users party](./gifs/launching-party-and-final-screen.gif)
 
-    To have the user submit their own jokes, a json-server was created with the [json-server NPM](https://www.npmjs.com/package/json-server) to seperately save and return the user's jokes.
 
-2) The entire app must run on a single page
+## Project Requirements of Middle-Earth Party Builder
 
-3) Use at least 3 unique event-listeners that enable interactivity.
+1) You must make a single page application (only one `index.html` file) using `create-react-app`.
 
-    Besides a "DOMContentLoaded" Event Listener, this app uses a "change", a "click" and a "submit" event listener to handle the various interactive aspects of the page. 
+    This is a single page application and was created using create-react-app
 
-4) Implement at least one instance of array iteration using available array methods.
+2) Your app should use at least 5 components in a way that keeps your code well organized.
 
-    This app uses a forEach method when appending multiple jokes at once.
+    This app uses a total of 15 components. The majority of event handling and state is held in the top-level `App` component, the exception being the `LaunchScreen` component holding its own.
 
-5) Follow good coding practicies, keeping the code non-repetetive
+3) There should be at least 3 client-side routes using React Router. 
 
-    Efforts were made to use callbacks and single purpose functions as much as possible.
+    There are a total of 5 client-side routes available to the user, all done using React Router v5.
+
+4) Use a `json-server` to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a form to make your post request, specifically a controlled form/component. Additionally, you may choose to incorporate data from an external API but it is not required.
+
+    A `json-server` is used to track the users' party. The `partyCards` state recieve their data from GET requests to this server. The `FinderForm` is a controlled form which feeds its data first through an external API [The One Api](https://the-one-api.dev/)  before allowing the user to POST it to the server. Additionaly, as mentioned, users can send DELETE requests.
+
+
+5) Add some styling
+
+    This app was styled with (styled-components)[https://styled-components.com/].
 
 
 
 ## Notes
 
-- Repeat jokes (other than user submitted jokes) are not possible with this app. If a joke is on the DOM and is generated again, the app will automatically delete that joke and fetch another.
+- Users cannot add the same party members twice or add more than nine party members. Frodo Baggins cannot be removed from the party.
 
-- With appropriate filters applied, there are actually only seven Haloween-themed jokes in the jokeAPI. An alert will play when all these jokes are displayed on the DOM.
+- Notifications in this app, were made through the use of (Toastify)[https://aleab.github.io/toastify/]
 
-- Many of the jokes in the JokeAPI database had the potential to be offensive to users. The filtering features of the JokeAPI made it possible to ensure the majority of those jokes are not generated, but it bears saying that no joke generated by the API is a reflection of the designer's own opinions or sensibilities. If you find any joke that's generated offensive, please let me know- I'll be sure to address it as quickly as I can.
+- The styling of the buttons was taken from the codepen (Fantasy Game Buttons by Manoel Gomes Neto)[https://codepen.io/manelsworld/pen/YvPVaw]
 
-- This was a stimulating and enjoyable project to round off the first phase of my course. Further improvements I would like to make would be limiting the amount of user-generated jokes to the amount that are in the json-server and providing some aesthetic features like a dark-mode.
+- The custom progress bar was heavily influenced by (this blog)[https://dev.to/ramonak/react-how-to-create-a-custom-progress-bar-component-in-5-minutes-2lcl] by Katsiaryna Lupachova
+
 
