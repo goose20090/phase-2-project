@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 import { StyledNavLink } from "./component styles/NavBar.style";
 
 function NavBar({className}){
 
     const location = useLocation()
-    console.log(location)
 
 
     return(

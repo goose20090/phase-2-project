@@ -6,7 +6,7 @@ function PartyContainer({className, partyCards, setPartyCards, handleCardDelete}
 
     
 
-    useEffect(()=>{fetch ("http://localhost:3000/party")
+    useEffect(()=>{fetch ("https://partybuilderjsonserver.herokuapp.com/party")
     .then(res=> res.json())
     .then(res=>setPartyCards(res))}, [])
 

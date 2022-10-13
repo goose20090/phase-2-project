@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { StyledSubContainer } from "./component styles/SubContainer.style";
 import {StyledFinderForm} from "./component styles/FinderForm.style"
 import { StyledCharacterCard } from "./component styles/CharacterChard.style";

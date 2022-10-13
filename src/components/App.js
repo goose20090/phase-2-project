@@ -1,7 +1,7 @@
 import '../css/App.css';
 import {StyledNavBar} from "./component styles/NavBar.style"
 import SuggestionsList from './SuggestionsList';
-import {Route, Switch, useHistory} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Party from './Party';
 import {MainAppContainer} from "./component styles/MainAppContainer.style"
 import {GlobalStyles} from "../GlobalStyles.style"
@@ -14,7 +14,6 @@ import {StyledLaunchPage} from './component styles/LaunchPage.style'
 
 function App() {
 
-  const history = useHistory();
 
   // State for Form Component
 
@@ -47,7 +46,8 @@ function App() {
   // Function to set Progress Bar percentage (called in useEffect on App's first load, handleAddToParty and handlePartyCardDelete)
 
   function setProgressBarPercentage(){
-    fetch("http://localhost:3000/party")
+    console.log('progressbar setter triggered')
+    fetch("https://partybuilderjsonserver.herokuapp.com/party")
     .then(res=>res.json())
     .then(res=>{
       let percentageProgress = Math.round((res.length / 9) * 100)
@@ -137,14 +137,20 @@ function handlePartyCardDelete(card, e){
     showToastErrorMessage("Frodo is the ring bearer! He must be in your party.")
   }
   else{
-    fetch(`http://localhost:3000/party/${card.id}`,{
+    fetch(`https://partybuilderjsonserver.herokuapp.com/party/${card.id}`,{
       method: "DELETE"
     })
-    .then(res=> console.log(res));
-    const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
-    setPartyCards(updatedCards);
-    setProgressBarPercentage();
-    showToastErrorMessage(`${card.name} has been removed from your party`)
+    .then((res)=> {
+      console.log(res);
+      const updatedCards = partyCards.filter((partyCard)=> partyCard.name !== card.name);
+      setPartyCards(updatedCards);
+      setProgressBarPercentage();
+      showToastErrorMessage(`${card.name} has been removed from your party`)
+    });
+    
+    
+    
+    
   }
 }
 
@@ -165,7 +171,7 @@ function handleAddToParty(card){
   }
 
   else {
-  fetch("http://localhost:3000/party"
+  fetch("https://partybuilderjsonserver.herokuapp.com/party"
   , {
     method: "POST",
     headers: {
