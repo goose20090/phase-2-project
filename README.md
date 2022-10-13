@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Middle Earth Party Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Middle Earth Party Builder is a single page React Application which works with [The One Api](https://the-one-api.dev/) to allow users to build their own party of Tolkein characters.
 
-## Available Scripts
+# The Amazing Joke Machine
 
-In the project directory, you can run:
+The Amazing Joke Machine is a web app designed to let the user generate jokes based on themes, submit their own and curate a selection of favourites.
 
-### `npm start`
+It was partly designed to fulfil a set of passing criteria for the phase 1 project of Flatiron's Software Engineering Course.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Experience
 
-### `npm test`
+- With the Amazing Joke Machine, the user can select a scenario where they may need relevant jokes, click the 'Get a Joke!' button and generate a joke themed around that scenario.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- If they would like multiple jokes themed around that scenario, they can click the 'Get a Bunch!' button.
 
-### `npm run build`
+- If they want a joke that is applicable to any situation, they can click the random button. (Note- clicking the 'Get a Bunch!' button when the select element is on default will generate multiple random jokes).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- If they want to submit their own jokes they can do so with a form at the bottom of the page. They can submit both one-line and two part jokes, using a toggling checkbox next to the form.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- After the user has submitted a joke, a new select option will appear on the dropdown- offering them the opportunity to generate jokes they've submitted themselves.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- All jokes have heart and cross buttons appended to them. Using the cross button, the user can remove any joke they like from the DOM. Using the heart button they can add any joke that they like to their list of favourites.
 
-### `npm run eject`
+- Cumulatively, this gives the user the opportunity to generate large number of jokes, submit their own into the mix and curate the highest quality ones into a list they can use for their chosen scenario.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Requirements of The Amazing Joke Machine
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1) The app must be a HTML/CSS/JS frontend that accesses data from a public API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    The api being used for this web app is the [JokeAPI](https://jokeapi.dev/). Besides having a database of 1369 jokes, it also offers a variety of filtering features. The user can interact with those features by using the different options of the drop-down menu.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    To have the user submit their own jokes, a json-server was created with the [json-server NPM](https://www.npmjs.com/package/json-server) to seperately save and return the user's jokes.
 
-## Learn More
+2) The entire app must run on a single page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3) Use at least 3 unique event-listeners that enable interactivity.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Besides a "DOMContentLoaded" Event Listener, this app uses a "change", a "click" and a "submit" event listener to handle the various interactive aspects of the page. 
 
-### Code Splitting
+4) Implement at least one instance of array iteration using available array methods.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    This app uses a forEach method when appending multiple jokes at once.
 
-### Analyzing the Bundle Size
+5) Follow good coding practicies, keeping the code non-repetetive
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Efforts were made to use callbacks and single purpose functions as much as possible.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Repeat jokes (other than user submitted jokes) are not possible with this app. If a joke is on the DOM and is generated again, the app will automatically delete that joke and fetch another.
 
-### Deployment
+- With appropriate filters applied, there are actually only seven Haloween-themed jokes in the jokeAPI. An alert will play when all these jokes are displayed on the DOM.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Many of the jokes in the JokeAPI database had the potential to be offensive to users. The filtering features of the JokeAPI made it possible to ensure the majority of those jokes are not generated, but it bears saying that no joke generated by the API is a reflection of the designer's own opinions or sensibilities. If you find any joke that's generated offensive, please let me know- I'll be sure to address it as quickly as I can.
 
-### `npm run build` fails to minify
+- This was a stimulating and enjoyable project to round off the first phase of my course. Further improvements I would like to make would be limiting the amount of user-generated jokes to the amount that are in the json-server and providing some aesthetic features like a dark-mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
