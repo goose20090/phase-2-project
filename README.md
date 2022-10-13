@@ -48,7 +48,7 @@ Once the party is full, users can 'launch' their party and be taken to a custom,
 
 5) Add some styling
 
-    This app was styled with (styled-components)[https://styled-components.com/].
+    This app was styled with [styled-components](https://styled-components.com/).
 
 
 
@@ -56,10 +56,10 @@ Once the party is full, users can 'launch' their party and be taken to a custom,
 
 - Users cannot add the same party members twice or add more than nine party members. Frodo Baggins cannot be removed from the party.
 
-- Notifications in this app, were made through the use of (Toastify)[https://aleab.github.io/toastify/]
+- Notifications in this app, were made through the use of [Toastify](https://aleab.github.io/toastify/)
 
-- The styling of the buttons was taken from the codepen (Fantasy Game Buttons by Manoel Gomes Neto)[https://codepen.io/manelsworld/pen/YvPVaw]
+- The styling of the buttons was taken from the codepen [Fantasy Game Buttons by Manoel Gomes Neto](https://codepen.io/manelsworld/pen/YvPVaw)
 
-- The custom progress bar was heavily influenced by (this blog)[https://dev.to/ramonak/react-how-to-create-a-custom-progress-bar-component-in-5-minutes-2lcl] by Katsiaryna Lupachova
+- The custom progress bar was heavily influenced by [this blog](https://dev.to/ramonak/react-how-to-create-a-custom-progress-bar-component-in-5-minutes-2lcl) by Katsiaryna Lupachova
 
 
