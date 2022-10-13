@@ -43,7 +43,7 @@ Once the party is full, users can 'launch' their party and be taken to a custom,
 
 4) Use a `json-server` to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a form to make your post request, specifically a controlled form/component. Additionally, you may choose to incorporate data from an external API but it is not required.
 
-    A `json-server` is used to track the users' party. The `partyCards` state recieve their data from GET requests to this server. The `FinderForm` is a controlled form which feeds its data first through an external API [The One Api](https://the-one-api.dev/)  before allowing the user to POST it to the server. Additionaly, as mentioned, users can send DELETE requests.
+    A `json-server`, deployed via Heroku, is used to track the users' party. Many states in the app recieve their data from GET requests to this server. The `FinderForm` is a controlled form which feeds its data first through an external API [The One Api](https://the-one-api.dev/)  before allowing the user to POST it to the server.  Users can also send DELETE requests.
 
 
 5) Add some styling
