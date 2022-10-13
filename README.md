@@ -62,4 +62,6 @@ Once the party is full, users can 'launch' their party and be taken to a custom,
 
 - The custom progress bar was heavily influenced by [this blog](https://dev.to/ramonak/react-how-to-create-a-custom-progress-bar-component-in-5-minutes-2lcl) by Katsiaryna Lupachova
 
+- This site was deployed via Netlify and Heroku at https://middle-earth-party-builder.netlify.app/
+
 
