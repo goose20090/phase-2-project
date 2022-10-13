@@ -8,7 +8,7 @@ function LaunchPage({className}){
     // Setting state for final party pased on json server on component loading
    
     useEffect(()=>{
-        fetch("http://localhost:3000/party")
+        fetch("https://partybuilderjsonserver.herokuapp.com/party")
         .then(res=>res.json())
         .then(res=> setParty(res))
     }, [])
