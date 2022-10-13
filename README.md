@@ -64,4 +64,4 @@ Once the party is full, users can 'launch' their party and be taken to a custom,
 
 - This site was deployed via Netlify and Heroku at https://middle-earth-party-builder.netlify.app/
 
-
+- The font used in this site is [Kelt](https://tolkiengateway.net/wiki/Fonts) © Bay Animation Inc., 1994
