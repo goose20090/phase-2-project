@@ -29,6 +29,12 @@ function App() {
 
   const [partyCards, setPartyCards] = useState([])
 
+  // GET Request for Party Component
+
+  useEffect(()=>{fetch ("https://partybuilderjsonserver.herokuapp.com/party")
+    .then(res=> res.json())
+    .then(res=>setPartyCards(res))}, [partyCards])
+
 
   //Change Handler for ControlledForm
 

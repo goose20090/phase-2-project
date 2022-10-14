@@ -1,16 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { StyledCharacterCard } from "./component styles/CharacterChard.style";
 import { StyledSubContainer } from "./component styles/SubContainer.style";
 
-function PartyContainer({className, partyCards, setPartyCards, handleCardDelete}){
-
-    
-
-    useEffect(()=>{fetch ("https://partybuilderjsonserver.herokuapp.com/party")
-    .then(res=> res.json())
-    .then(res=>setPartyCards(res))}, [])
-
-
+function PartyContainer({className, partyCards, handleCardDelete}){
 
     return(
         <StyledSubContainer className={className}>
